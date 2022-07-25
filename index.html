@@ -551,7 +551,7 @@
         </div>
         <div class="subscription">
           <b class="join">Подпишитесь на рассылку</b>
-          <form class="js-speaker-form">
+          <form class="subscription-form">
             <div class="flex-content">
               <label class="mail visually-hidden" for="email">Почта</label>
               <input
@@ -580,9 +580,36 @@
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <h3 id="contact-head" class="contact-headcontact-head">
+            Оставьте свои данные, мы вам перезвоним
+          </h3>
+          <div class="form-group" role="group" aria-labelledby="contact-head">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+            <svg><use></use></svg>
+            <br />
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+            <svg><use></use></svg>
+            <br />
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" />
+            <svg><use></use></svg>
+            <br />
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form-checkbox">
+            <label class="checkbox-label">
+              <input class="checkbox visually-hidden" type="checkbox" name="policy" />
+              <span class="checkbox-icon"></span>
+              <span></span>
+            </label>
+          </div>
+        </form>
       </div>
     </div>
-    <script src="./js/subscription.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
