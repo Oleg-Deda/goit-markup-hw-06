@@ -359,9 +359,13 @@ img {
   position: absolute;
   display: flex;
   align-items: center;
-  left: 82px;
-  bottom: 35px;
+  left: 0;
+  bottom: 0;
   font-weight: 700;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  height: 70px;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -768,7 +772,6 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .overlay-text {
-  padding: 63px 24px;
   font-size: 18px;
   line-height: 1.55;
   color: var(--primary-white-color);
