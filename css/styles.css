@@ -67,8 +67,8 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 .border {
   border-bottom: 1px solid var(--header-border);
@@ -263,12 +263,18 @@ img {
 
 .modal-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
   width: 30px;
   height: 30px;
-  right: 8px;
-  top: 8px;
+  transform: translate(-8px, 8px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-white-color);
-  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  /* border: 1px solid var(--primary-color); */
 }
 
 /* Features */
@@ -799,3 +805,26 @@ img {
 .card-link:focus .project-overlay {
   transform: translateY(-100%);
 }
+
+.contacts-head {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.text {
+  padding: 11px;
+  height: 18px;
+  background: url(../images/icons/user-icon.svg);
+}
+
+/* .modal-form {
+  width: 528px;
+  height: 581px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  outline: 1px solid tomato;
+} */
