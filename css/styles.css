@@ -733,7 +733,8 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: color var(--animation), background-color var(--animation);
+  /* transition: color var(--animation), background-color var(--animation); */
+  /* transition: color var(--animation); */
 }
 
 .send-icon {
@@ -741,11 +742,11 @@ img {
   fill: currentColor;
 }
 
-.subscription-button:hover,
+/* .subscription-button:hover,
 .subscription-button:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
-}
+} */
 
 /* footer end */
 
