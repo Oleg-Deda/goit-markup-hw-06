@@ -261,7 +261,7 @@ img {
   transition: opacity var(--animation), visibility var(--animation), transform var(--animation);
 }
 
-.modal-btn {
+.modal-close-btn {
   position: absolute;
   display: flex;
   align-items: center;
@@ -274,14 +274,15 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-white-color);
   border-radius: 50%;
+  transition: color var(--animation), border-color var(--animation);
 }
 
-.modal-btn {
+.modal-close-btn {
   fill: currentColor;
 }
 
-.modal-btn:focus,
-.modal-btn:hover {
+.modal-close-btn:focus,
+.modal-close-btn:hover {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   cursor: pointer;
@@ -297,7 +298,7 @@ img {
   color: var(--secondary-color);
 }
 
-.modal .label {
+.modal .form-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -742,11 +743,10 @@ img {
   fill: currentColor;
 }
 
-/* .subscription-button:hover,
+.subscription-button:hover,
 .subscription-button:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
-} */
+  cursor: pointer;
+}
 
 /* footer end */
 
