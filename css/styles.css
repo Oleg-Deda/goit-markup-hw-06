@@ -314,8 +314,13 @@ img {
   border-radius: 4px;
   transition: border-color var(--animation);
 }
+
 .modal .input:hover,
 .modal .input:focus {
+  fill: var(--accent-color);
+  transition: var(--animation);
+  outline: none;
+  /* transition-property: border-color; */
   border-color: var(--accent-color);
 }
 
