@@ -364,13 +364,16 @@
           </li>
         </ul>
       </div>
+      <!--
+
+       -->
       <div class="subscription">
         <h2 class="join">Подпишитесь на рассылку</h2>
         <form class="subscription-form">
           <div class="flex-content">
             <label class="mail visually-hidden" for="email">Почта</label>
             <input class="email-input" type="email" name="email" id="email" placeholder="E-mail" />
-            <button class="subscription-button" type="button">
+            <button data-modal-open class="subscription-button" type="button">
               Подписаться
               <svg class="send-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -414,22 +417,17 @@
           </svg>
         </div>
         <label class="form-label" for="comment">Комментарий</label>
-        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+        <textarea class="form-comments" name="comments" id="comments" placeholder="Введите текст"></textarea>
+        <label class="policy-label">
+          <input class="checkbox " type="checkbox" name="policy" />
+          <span class="custom-checkbox"></span>
+          <span>Соглашаюсь с рассылкой и принимаю </span>
+          <a class="policy-link" href target="_blank" rel="noopener noreferrer">Условия
+            договора</a>
+        </label>
+        <button class="send-button" type="submit">Отправить</button>
+      </form>
     </div>
-    <!-- <div class="form-checkbox"> -->
-    <label class="checkbox-label">
-      <input class="checkbox visually-hidden" type="checkbox" name="policy" />
-      <span class="checkbox-icon"></span>
-      <span>Соглашаюсь с рассылкой и принимаю </span>
-    </label>
-    <a class="policy-link" href target="_blank" rel="noopener noreferrer">Условия договора</a>
-    <!-- </div> -->
-
-    <button class="button" type="submit">Отправить</button>
-    </form>
-
-    <!-- </div> -->
-  </div>
 </body>
 <script src="./js/modal.js"></script>
 </body>

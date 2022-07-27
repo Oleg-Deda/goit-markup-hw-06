@@ -314,7 +314,8 @@ img {
   border-radius: 4px;
   transition: border-color var(--animation);
 }
-.modal .input:hover {
+.modal .input:hover,
+.modal .input:focus {
   border-color: var(--accent-color);
 }
 
@@ -328,7 +329,7 @@ img {
   top: 50%;
   left: 0;
   transform: translate(12px, -50%);
-  fill: currentColor;
+  fill: var(--secondary-color);
   transition: fill var(--animation);
 }
 
@@ -347,12 +348,75 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   line-height: 1.14;
-  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal .form-comments::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal .policy-label {
+  display: block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.custom-checkbox {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 1.5px solid var(--secondary-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .custom-checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-image: url(../images/icons/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  background-position: center;
+}
+
+.modal .policy-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.modal .send-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow var(--animation);
+}
+.modal .send-button:hover,
+.modal .send-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Features */
@@ -377,7 +441,6 @@ img {
   /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
-
   gap: var(--indent);
 }
 .features-list .features-item {
