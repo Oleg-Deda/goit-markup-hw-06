@@ -400,6 +400,7 @@ img {
 .modal .policy-link {
   color: var(--accent-color);
   text-decoration: underline;
+  text-underline-position: under;
 }
 .modal .send-button {
   display: block;
