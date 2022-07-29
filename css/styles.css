@@ -387,7 +387,7 @@ img {
   bottom: 11px;
   left: 12px;
   transition: var(--animation);
-  /* color: var(--accent-color); */
+  color: var(--accent-color);
 }
 
 .register-form-icon:focus,
