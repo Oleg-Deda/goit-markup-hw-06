@@ -285,7 +285,7 @@ img {
 .modal-close-btn:focus,
 .modal-close-btn:hover {
   color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  /* border: 1px solid var(--accent-color); */
   cursor: pointer;
 }
 
@@ -318,16 +318,6 @@ img {
   color: var(--primary-color);
 }
 
-.register-form-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 55px;
-  text-transform: uppercase;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 .register-form-wrap {
   display: block;
   margin-bottom: 4px;
@@ -338,6 +328,7 @@ img {
 .register-form-wrap {
   position: relative;
   display: block;
+  margin-bottom: 10px;
 }
 
 .register-form-wrap:last-child {
@@ -417,10 +408,20 @@ img {
   text-align: left;
   display: flex;
   padding: 0;
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center;
+  /* justify-content: center;
   /* gap: 8px; */
-  /* margin-bottom: 30px; */
+  margin-bottom: 45px;
+}
+
+.register-checkbox {
+  margin-right: 7px;
+}
+
+.register-icon-check {
+  opacity: 0;
+  fill: var(--accent-color);
+  transition: opacity var(--animation);
 }
 
 .register-checkbox:checked + .register-icon .register-icon-uncheck {
@@ -428,13 +429,9 @@ img {
   transition: opacity var(--animation);
 }
 
-.register-icon-check {
-  opacity: 0;
-  transition: opacity var(--animation);
-}
-
 .register-checkbox:checked + .register-icon .register-icon-check {
   opacity: 1;
+  transition: opacity var(--animation);
 }
 
 .register-form-agreement-link {
@@ -460,6 +457,16 @@ img {
   cursor: pointer;
   transition: box-shadow var(--animation);
 }
+
+/* .register-form-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 55px;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+} */
 
 .register-form-btn:hover,
 .register-form-btn:focus {
@@ -824,7 +831,7 @@ img {
 .join {
   display: inline-block;
   margin-bottom: 20px;
-  padding-top: 72px;
+  /* padding-top: 72px; */
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
