@@ -384,7 +384,6 @@ img {
 .register-form-icon:focus,
 .register-form-icon:hover {
   fill: var(--accent-color);
-  /* color: var(--accent-color); */
 }
 
 .register-form-message {
@@ -414,23 +413,25 @@ img {
   margin-bottom: 45px;
 }
 
-.register-checkbox {
+.register-icon {
+  transition: opacity var(--animation);
   margin-right: 7px;
 }
 
 .register-icon-check {
   opacity: 0;
-  fill: var(--accent-color);
   transition: opacity var(--animation);
 }
 
 .register-checkbox:checked + .register-icon .register-icon-uncheck {
   opacity: 0;
+
   transition: opacity var(--animation);
 }
 
 .register-checkbox:checked + .register-icon .register-icon-check {
   opacity: 1;
+  background-color: #2196f3;
   transition: opacity var(--animation);
 }
 
@@ -457,16 +458,6 @@ img {
   cursor: pointer;
   transition: box-shadow var(--animation);
 }
-
-/* .register-form-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 55px;
-  text-transform: uppercase;
-  background-color: transparent;
-  cursor: pointer;
-} */
 
 .register-form-btn:hover,
 .register-form-btn:focus {
