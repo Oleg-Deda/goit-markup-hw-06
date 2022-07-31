@@ -431,7 +431,7 @@ img {
 
 .register-checkbox:checked + .register-icon .register-icon-check {
   opacity: 1;
-  background-color: #2196f3;
+  /* background-color: #2196f3; */
   transition: opacity var(--animation);
 }
 
