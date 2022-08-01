@@ -253,7 +253,7 @@ img {
   left: 50%;
   padding: 40px;
   min-width: 528px;
-  min-height: 581px;
+  max-height: 581px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -408,7 +408,7 @@ img {
   display: flex;
   padding: 0;
   align-items: center;
-  /* justify-content: center;
+  justify-content: center;
   /* gap: 8px; */
   margin-bottom: 45px;
 }
@@ -441,6 +441,13 @@ img {
   text-underline-position: under;
 }
 
+.register-form-agreement:focus-within .register-icon {
+  border: 1px solid var(--accent-color);
+}
+
+.register-form-agreement:focus-within .register-icon-uncheck {
+  opacity: 0;
+}
 .register-form-btn {
   display: block;
   margin-left: auto;
